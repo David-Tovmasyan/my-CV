@@ -1,0 +1,47 @@
+@import '../../styles.scss';
+
+* {
+  color: white;
+}
+
+.contentWrapper {
+  position: relative;
+  top: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//.appearingText{
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//}
+
+
+.appearingText {
+
+  .first {
+    @include typingText(3s, 0); //param1-animation length, param2 animation-delay
+    letter-spacing: .05em;
+    font-size: $titleSize;
+  }
+
+  .second {
+    @include typingText(3.5s, 2s); 
+    font-size: $regularSize;
+    letter-spacing: .05em;
+    visibility: hidden;
+
+    
+  }
+  span {
+    color: $textColor;
+    margin-left: 0.4rem;
+  }
+  // reset animation if component has been visited
+  .visited {
+    animation-name: none;
+    visibility: visible;
+  }
+}

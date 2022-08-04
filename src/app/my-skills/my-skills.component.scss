@@ -1,0 +1,147 @@
+@import '../../styles.scss';
+
+@mixin iconAppear {
+    @include typingText(3s, 0); //param1-animation length, param2 animation-delay
+}
+
+$barWidth: calc(3rem + 25vw);
+
+
+.contentWrapper {
+    position: relative;
+    top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mainBranch {
+        display: flex;
+        gap: 2.5vw;
+        max-width: fit-content;
+
+        .htmlBranch {
+            @include iconAppear;
+
+            .html {
+                background-image: url("../assets/html.webp");
+            }
+        }
+
+        .cssBranch {
+            @include iconAppear;
+
+
+            .css {
+                background-image: url("../assets/css.webp");
+            }
+
+            .scss {
+                background-image: url(../assets/sass.png);
+            }
+
+            .bootstrap {
+                background-image: url(../assets/bootstrap-logo.png);
+            }
+
+        }
+
+        .jsBranch {
+            @include iconAppear;
+
+
+            .js {
+                background-image: url("../assets/js.png");
+            }
+
+            .ts {
+                background-image: url(../assets/typescript-2.svg);
+            }
+
+            .angular {
+                background-image: url(../assets/Angular_full_color_logo.svg.png)
+            }
+
+            .react {
+                background-image: url(../assets/React-icon.svg.png);
+            }
+        }
+
+        .other {
+            @include iconAppear;
+
+
+            .github {
+                background-image: url(../assets/github.jpg);
+            }
+
+            .git {
+                background-image: url(../assets/Git-Logo-White.png);
+                background-position: 0 2vw;
+            }
+
+            .php {
+                background-image: url(../assets/php.png);
+                background-position: 0 1.5vw;
+            }
+
+            .mysql {
+                background-image: url(../assets/mysql.jpg);
+            }
+        }
+
+        .visited {
+            animation-name: none;
+            visibility: visible;
+        }
+    }
+}
+
+.progressBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+
+    .progCircles {
+
+        display: flex;
+        gap: 0.4vw;
+
+        .progCircle {
+            width: calc(10px + 0.5vw);
+            height: calc(10px + 0.5vw);
+            background-color: rgb(3, 205, 3);
+            border-radius: 50%;
+            transition: all 0.5s;
+        }
+
+        .empty {
+            background-color: rgb(69, 69, 69);
+        }
+    }
+
+
+
+    .langName {
+        font-size: $regularSize;
+        margin-right: 10px;
+    }
+}
+
+
+
+.circle {
+    width: $iconSize;
+    height: $iconSize;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+

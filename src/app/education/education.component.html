@@ -1,0 +1,50 @@
+<div class="contentWrapper">
+    <div class="languages">
+        <div class="languagesTitle">
+            Languages
+        </div>
+        <ul>
+            <li  [class.visited]="visited">
+                <div class="langName">{{languages[0].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[0].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[0].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[0].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[0].value<5?'empty':''"></div>
+                </div>
+            </li>
+            <li  [class.visited]="visited">
+                <div class="langName">{{languages[1].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[1].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[1].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[1].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[1].value<5?'empty':''"></div>
+                </div>
+            </li>
+            <li  [class.visited]="visited">
+                <div class="langName">{{languages[2].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[2].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[2].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[2].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[2].value<5?'empty':''"></div>
+                </div>
+            </li>
+            <li  [class.visited]="visited">
+                <div class="langName">{{languages[3].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[3].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[3].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[3].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[3].value<5?'empty':''"></div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

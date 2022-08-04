@@ -1,0 +1,14 @@
+@import '../../styles.scss';
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin-top: 10vh;
+}
+div.text{
+  color: $textColor;
+  font-size: $regularSize;
+}

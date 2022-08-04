@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'CV_WebPage';
+  routerOutletComponentClass: string = "";
+  onActivate(event: any) {
+    this.routerOutletComponentClass = event.constructor.name; // changing component property for styling
+  }
 }

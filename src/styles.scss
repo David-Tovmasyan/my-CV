@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@mixin typingText($textingTime,$animationDelay){
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:typing $textingTime;
+  animation-delay: $animationDelay;
+  animation-fill-mode: forwards;
+  
+  //typing effect
+  @keyframes typing {
+    from { width: 0;margin-left: 0;visibility: hidden }
+    to { width: 100%;margin-left: 0;visibility: visible}
+  }
+}
+$textColor:#ae00ff;
+$titleSize: calc(1.4rem + 1.4vw );
+$regularSize:calc(0.6rem + 0.6vw );
+$menuSize:calc(0.7rem + 0.6vw);
+$iconSize:calc(1.6rem + 4vw);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+@media  screen and (max-width: 400px) {
+  li a.menu{
+    font-size: calc($menuSize *9 /10);
+  }
+}
+@media  screen and (max-width: 350px) {
+  li a.menu{
+    font-size: calc($menuSize *7 /10);
+  }
+}
+@media  screen and (max-width: 280px) {
+  li a.menu{
+    font-size: calc($menuSize *6 /10);
+  }
+}
+
