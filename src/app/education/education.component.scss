@@ -1,6 +1,6 @@
 @import '../../styles.scss';
 
-@keyframes appearAnimation {
+@keyframes appear {
     0% {
         opacity: 0;
     }
@@ -11,57 +11,52 @@
 }
 
 .contentWrapper {
-    position: relative;
-    top: 6vh;
+    margin-top: 40px;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: $regularSize;
+    animation: appear 1s;
 
+    .title {
+        font-size: $menuSize;
+        font-weight: 700;
+    }
 
-    // languages part
+    .schoolWrapper {
+        .school {
+            margin-bottom: 20px;
 
-
-    .languages {
-        .languagesTitle {
-            font-size: calc($regularSize * 1.5);
+            // border-bottom: 1px solid grey;
+            .schoolName {
+                color: $textColor;
+            }
         }
 
-        ul {
-            list-style: none;
-
-            li {
-                margin-bottom: 5px;
-                animation: appearAnimation 1s;
-
-                .progCircles {
-
-                    display: flex;
-                    gap: 0.4vw;
-
-                    .progCircle {
-                        width: calc(10px + 0.5vw);
-                        height: calc(10px + 0.5vw);
-                        background-color: rgb(3, 205, 3);
-                        border-radius: 50%;
-                        transition: all 0.5s;
-                    }
-
-                    .empty {
-                        background-color: rgb(69, 69, 69);
-                    }
-                }
-
-                .langName {
-                    font-size: $regularSize;
-                    margin-right: 10px;
-                }
-            }
-
-            .visited {
-                animation-name: none;
-                visibility: visible;
-            }
+        .line {
+            position: relative;
+            bottom: 10px;
+            width: 12vw;
+            height: 1px;
+            background-color: grey;
         }
     }
 
+    .courseWrapper {
+        position: relative;
+        right: calc(5rem + 5vw); // to make in one line with School
+
+        .course {
+            margin-top: 1vh;
+
+            .courseHost {
+                color: $textColor;
+            }
+        }
+    }
+}
+
+.visited {
+    animation-name: none;
+    visibility: visible;
 }

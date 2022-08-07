@@ -19,6 +19,8 @@ export class MySkillsComponent implements OnInit {
   constructor(private _knowledge: KnowledgeService) {
     this.kn = _knowledge.knowledge;
     this.levelValue = this.kn[0].value;
+    let circles = document.querySelectorAll(".circle");
+    console.log(circles);
   }
 
   ngOnInit(): void {

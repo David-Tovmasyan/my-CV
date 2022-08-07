@@ -9,7 +9,7 @@ export class KnowledgeService {
   knowledge: Array<Iknowledge> = [
     { name: "HTML", value: 3 },
     { name: "CSS", value: 3 },
-    { name: "JS", value: 3 },
+    { name: "JS", value: 4 },
     { name: "SCSS", value: 3 },
     { name: "Bootstrap", value: 2 },
     { name: "React", value: 2 },

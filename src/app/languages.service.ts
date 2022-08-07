@@ -10,7 +10,7 @@ export class LanguagesService {
 
   languages:Array<Iknowledge>=[
     {name:"Armenian",value:5},
-    {name:"Polish",value:3},
+    {name:"Polish",value:4},
     {name:"English",value:4},
     {name:"Russian",value:4},
   ]

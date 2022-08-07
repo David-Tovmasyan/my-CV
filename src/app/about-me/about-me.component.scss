@@ -1,0 +1,94 @@
+@import '../../styles.scss';
+
+@keyframes appearAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contentWrapper {
+    position: relative;
+    top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    animation: appearAnimation 1s;
+
+    .bio {
+        width: calc(10rem + 25vw);
+
+        .title {
+            font-size: calc($regularSize * 1.5);
+            font-weight: 700;
+        }
+
+        .bioText {
+            font-size: $regularSize;
+        }
+        a{
+            display: block;
+            color: $textColor;
+        }
+    }
+
+
+
+
+    // languages part
+
+
+    .languages {
+        position: relative;
+        right: calc(2.5rem + 9.5vw);
+
+        .languagesTitle {
+            font-size: calc($regularSize * 1.5);
+            font-weight: 700;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 5px;
+
+                .progCircles {
+
+                    display: flex;
+                    gap: 0.4vw;
+
+                    .progCircle {
+                        width: calc(10px + 0.5vw);
+                        height: calc(10px + 0.5vw);
+                        background-color: rgb(3, 205, 3);
+                        border-radius: 50%;
+                        transition: all 0.5s;
+                    }
+
+                    .empty {
+                        background-color: rgb(69, 69, 69);
+                    }
+                }
+
+                .langName {
+                    font-size: $regularSize;
+                    margin-right: 10px;
+                }
+            }
+
+
+        }
+    }
+
+
+}
+
+.visited {
+    animation-name: none;
+    visibility: visible;
+}

@@ -1,3 +1,64 @@
+<div class="contentWrapper" [class.visited]="visited">
 
+    <div class="bio">
+        <div class="title">Bio</div>
+        <div class="bioText">
+            My name is David Tovmasyan. I was born in Szczecinek, Poland in 2004. on May 28. From a young age I was
+            deeply interested in computers, so a few years ago I decided to learn programming. I explored IT industry, mainly
+            software development in C# programming language. Then I learned web programming and realized that it was
+            closer to my heart, so I focused on that.
+            I have created several non-commercial projects that are located in my Github account.
+            <a href="https://github.com/David-Tovmasyan/weather-app-js">Weather application </a>
+            <a href="https://github.com/David-Tovmasyan/my-CV">This CV</a>
+        </div>
+    </div>
+    <div class="languages">
+        <div class="languagesTitle">
+            Languages
+        </div>
+        <ul>
+            <li>
+                <div class="langName">{{languages[0].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[0].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[0].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[0].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[0].value<5?'empty':''"></div>
+                </div>
+            </li>
+            <li>
+                <div class="langName">{{languages[1].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[1].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[1].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[1].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[1].value<5?'empty':''"></div>
+                </div>
+            </li>
+            <li>
+                <div class="langName">{{languages[2].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[2].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[2].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[2].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[2].value<5?'empty':''"></div>
+                </div>
+            </li>
+            <li>
+                <div class="langName">{{languages[3].name}}</div>
+                <div class="progCircles">
+                    <div class="progCircle"></div>
+                    <div class="progCircle" [class]="languages[3].value<2?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[3].value<3?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[3].value<4?'empty':''"></div>
+                    <div class="progCircle" [class]="languages[3].value<5?'empty':''"></div>
+                </div>
+            </li>
 
+        </ul>
+    </div>
 
+</div>

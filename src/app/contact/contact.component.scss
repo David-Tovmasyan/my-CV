@@ -9,7 +9,6 @@
 }
 
 .appearingText {
-
     .email {
         @include typingText(3s, 0); //param1-animation length, param2 animation-delay
         letter-spacing: .05em;
@@ -17,12 +16,21 @@
     }
 
     .phone {
-        @include typingText(3.5s, 2.5s);
+        @include typingText(5s, 2s);
         font-size: $regularSize;
         letter-spacing: .05em;
         visibility: hidden;
     }
-
+    .address{
+        @include typingText(3.5s, 4s);
+        font-size: $regularSize;
+        letter-spacing: .05em;
+        visibility: hidden;
+        .addressName{
+            display: inline;
+            color: $textColor;
+        }
+    }
     a {
         color: $textColor;
         margin-left: 0.4rem;

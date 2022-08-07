@@ -1,24 +1,24 @@
 <div class="contentWrapper">
     <div class="mainBranch">
         <div class="htmlBranch" [class.visited]="visited">
-            <div class="html circle" (mouseenter)="changeLevel($event)"></div>
+            <div class="html circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)" ></div>
         </div>
         <div class="cssBranch" [class.visited]="visited">
-            <div class="css circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="scss circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="bootstrap circle" (mouseenter)="changeLevel($event)"></div>
+            <div class="css circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="scss circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="bootstrap circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
         </div>
         <div class="jsBranch" [class.visited]="visited">
-            <div class="js circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="react circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="ts circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="angular circle" (mouseenter)="changeLevel($event)"></div>
+            <div class="js circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="react circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="ts circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="angular circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
         </div>
         <div class="other" [class.visited]="visited">
-            <div class="git circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="github circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="php circle" (mouseenter)="changeLevel($event)"></div>
-            <div class="mysql circle" (mouseenter)="changeLevel($event)"></div>
+            <div class="git circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="github circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="php circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
+            <div class="mysql circle" (mouseenter)="changeLevel($event)" (click)="changeLevel($event)"></div>
         </div>
     </div>
     <div class="progressBar">
